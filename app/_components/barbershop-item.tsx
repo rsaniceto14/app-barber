@@ -8,6 +8,7 @@ import Link from "next/link"
 
 interface BarbershopItemProps {
   barbershop: Barbershop
+  className?: string
 }
 
 const BarbershopItem = ({ barbershop }: BarbershopItemProps) => {
