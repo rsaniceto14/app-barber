@@ -24,13 +24,12 @@ const BarbershopDetails = ({ barbershop }: BarbershopDetailsProps) => {
           <p className="text-sm">5.0 (899 avaliações)</p>
         </div>
       </div>
-      <div className=" space-y-2 border-b border-solid p-5">
+      <div className="space-y-2 border-b border-solid p-5">
         <h2 className="mb-3 mt-6 text-xs font-bold uppercase text-gray-400">
           Sobre nós
         </h2>
         <p>{barbershop.description}</p>
       </div>
-
     </>
   )
 }
