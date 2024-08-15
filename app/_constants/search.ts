@@ -18,12 +18,7 @@ interface QuickSearchOptions {
     imageUrl: "/acabamento.svg",
     title: "Acabamento"
  },
- 
- {
-    imageUrl: "/massagem.svg",
-    title: "Cabelereiro"
- },
- 
+  
  {
     imageUrl: "/sobrancelha.svg",
     title: "Sobrancelha"
