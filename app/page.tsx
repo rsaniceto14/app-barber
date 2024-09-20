@@ -1,6 +1,4 @@
-import { SearchIcon } from "lucide-react"
 import Header from "./_components/header"
-import { Input } from "./_components/ui/input"
 import { Button } from "./_components/ui/button"
 import Image from "next/image"
 import { db } from "./_lib/prisma"
@@ -23,13 +21,10 @@ const Home = async () => {
 
       <div className="p-5">
         <h2 className="text-xl font-bold">Olá, Raphael!</h2>
-        <p>Quarta-feira, 07 de agosto.</p>
+        <p>Sexta-feira, 20 de setembro.</p>
 
         <div className="mt-6 flex items-center gap-2">
-          <Input placeholder="Faça sua busca" />
-          <Button>
-            <SearchIcon />
-          </Button>
+          {/* <BarbershopSearch /> */}
         </div>
 
         <div className="mt-6 flex gap-3 overflow-x-scroll [&::-webkit-scrollbar]:hidden">

@@ -8,7 +8,13 @@ import PhoneItem from "@/app/_components/phone-item"
 interface BarbershopPageProps {
   params: {
     id: string
-  }
+  },
+
+  // searchParams: {
+  //   search?: string
+  // }
+
+
 }
 
 const BarbershopPage = async ({ params }: BarbershopPageProps) => {
@@ -16,6 +22,7 @@ const BarbershopPage = async ({ params }: BarbershopPageProps) => {
     where: {
       id: params.id,
     },
+    
     include: {
       services: true,
     },
@@ -47,6 +54,10 @@ const BarbershopPage = async ({ params }: BarbershopPageProps) => {
           <PhoneItem phone={phone} key={phone} />
         ))}
       </div>
+
+      {/* {searchParams && searchParams.search && (
+        <h1>Resultado da pesquisa: {searchParams.search}</h1>
+      )} */}
     </div>
   )
 }
